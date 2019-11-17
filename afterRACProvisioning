@@ -1,0 +1,28 @@
+[grid@rac1 ~]$ sqlplus / as sysasm
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Sat Nov 16 20:58:31 2019
+Version 19.5.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.5.0.0.0
+
+SQL> alter user sys identified by "Octank#1234";
+
+User altered.
+
+SQL> alter user asmsnmp identified by "Octank#1234";
+
+User altered.
+
+
+[root@rac1 ~]# yum install tigervnc
+[root@rac1 ~]# vncserver
+
+vnc connecting
+dbca로 db create on both db nodes
+
+https://t1.daumcdn.net/cfile/tistory/171C95374FF065B91A
